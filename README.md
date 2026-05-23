@@ -1,3 +1,21 @@
+# KeePassium + React Native
+
+This is an experimental fork of the official [KeePassium](https://github.com/keepassium/KeePassium) with the sole purpose of testing brownfield support for Expo and React Native in large native-first codebases. Its commits serve as a reference for anyone interested in integrating React Native into an existing iOS app, especially those that don't want to refactor the whole project structure to accommodate React Native.
+
+This project uses Expo's brownfield isolated approach with **bidirectional shared state**: KeePassium publishes a mock vault state (vault name, entry count, last-unlocked time, session token) into the `expo-brownfield` shared-state KV store, and the embedded React Native screen reads it reactively via `useSharedState`. A "Re-roll session token" button in the RN screen sends a message back through `expo-brownfield`'s messaging channel; native re-generates the token and pushes it into shared state — RN sees the new value without re-rendering.
+
+## Integration steps
+
+Check commits for detailed steps, full instructions can be found in the [expo-brownfield documentation](https://docs.expo.dev/brownfield/overview/).
+
+1. **Create the Expo app**: Run `npx create-expo-app expo-app --template default@sdk-56` to set up a new Expo app.
+2. **Install expo-brownfield**: Add expo-brownfield to your project `npx expo install expo-brownfield` and generate a Swift Package.
+3. **Add React Native view**: Integrate the Expo app Swift Package into the existing iOS app.
+4. **Wire shared state**: Native side calls `BrownfieldState.set(key, value)` + `BrownfieldMessaging.addListener`. RN side uses `useSharedState` + `sendMessage`. See `KeePassium/ExpoIntegration.swift` and `expo-app/src/app/index.tsx`.
+
+<details>
+<summary>KeePassium</summary>
+
 # KeePassium Password Manager
 
 [KeePassium](https://keepassium.com) is a KeePass-compatible password manager for iOS. It offers automatic database synchronization, respect to privacy and premium user experience.
@@ -145,3 +163,5 @@ KeePassium is a commercial open-source app, available under the  [GPLv3 license]
 While derivative works (forks) are explicitly allowed by the GPL, please don't submit them to AppStore. Due to a conflict between GPL and AppStore terms of service, GPL-licensed apps are [banned](https://www.fsf.org/blogs/licensing/more-about-the-app-store-gpl-enforcement) from AppStore. For the same reason, KeePassium [cannot accept code contributions](https://apple.stackexchange.com/questions/6109/is-it-possible-to-have-gpl-software-in-the-mac-app-store).
 
 For commercial licensing or custom modifications, please [contact us](info@keepassium.com).
+
+</details>
