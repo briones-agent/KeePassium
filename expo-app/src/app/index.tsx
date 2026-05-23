@@ -29,6 +29,21 @@ export default function VaultInspector() {
     return () => sub.remove();
   }, []);
 
+  useEffect(() => {
+    // Brownfield demo helper: fire a few re-rolls automatically so the
+    // recording shows the round-trip (RN sendMessage → native re-rolls
+    // state → useSharedState reactively updates → ack increments counter)
+    // without needing UI automation. Disable by setting __DEMO_AUTO_REROLL__
+    // to false on a real run.
+    const __DEMO_AUTO_REROLL__ = true;
+    if (!__DEMO_AUTO_REROLL__) return;
+    const timers = [
+      setTimeout(() => sendMessage({ type: 'REROLL_TOKEN' }), 4500),
+      setTimeout(() => sendMessage({ type: 'REROLL_TOKEN' }), 7500),
+    ];
+    return () => timers.forEach(clearTimeout);
+  }, []);
+
   const handleReRoll = () => {
     sendMessage({ type: 'REROLL_TOKEN' });
   };

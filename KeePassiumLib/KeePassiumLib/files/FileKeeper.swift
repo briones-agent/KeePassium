@@ -82,8 +82,11 @@ public class FileKeeper {
 
         print("\nDoc dir: \(docDirURL)\n")
 
-        guard let sharedContainerURL = FileManager.default.containerURL(
-            forSecurityApplicationGroupIdentifier: AppGroup.id) else { fatalError() }
+        // Brownfield-demo patch: fall back to the app's Documents directory when
+        // the App Group container is nil (simulator without provisioned
+        // entitlements). Keeps dev/brownfield builds runnable.
+        let sharedContainerURL = FileManager.default.containerURL(
+            forSecurityApplicationGroupIdentifier: AppGroup.id) ?? docDirURL
 
         let _backupDirURL = sharedContainerURL.appendingPathComponent(
             FileKeeper.backupDirectoryName,

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DFDEF99D7A77C4B57101425 /* hermesvm in Frameworks */ = {isa = PBXBuildFile; productRef = D5EC65BD52F4413A1E1D5ED6 /* hermesvm */; };
+		667EC01406D2AF78ACCB5D0A /* ExpoModulesJSI in Frameworks */ = {isa = PBXBuildFile; productRef = 42A45E44E6964F2B15139288 /* ExpoModulesJSI */; };
 		75060C592B8CEADF006C7B50 /* MacUtils.bundle in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75060C552B8CEA84006C7B50 /* MacUtils.bundle */; platformFilter = maccatalyst; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75060C5C2B8CEB33006C7B50 /* MacUtils.bundle in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75060C552B8CEA84006C7B50 /* MacUtils.bundle */; platformFilter = maccatalyst; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75060C5F2B8CEB3E006C7B50 /* MacUtils.bundle in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75060C552B8CEA84006C7B50 /* MacUtils.bundle */; platformFilter = maccatalyst; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -50,6 +52,9 @@
 		75D7DFAA233E5E310029AD87 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7550D231215D758800360E0C /* AuthenticationServices.framework */; };
 		75D7DFC7233E5E8C0029AD87 /* KeePassium Pro AutoFill.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75D7DFBE233E5E310029AD87 /* KeePassium Pro AutoFill.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		75FEC2232175292C0034334B /* KeePassiumLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FEC2222175292C0034334B /* KeePassiumLib.framework */; };
+		85E5BBAFF54B6A26C71F6DBC /* ReactNativeDependencies in Frameworks */ = {isa = PBXBuildFile; productRef = C4C42A94F1BD97B1E9354074 /* ReactNativeDependencies */; };
+		AA97117095AA8F3E656C2257 /* KeePassiumExpo in Frameworks */ = {isa = PBXBuildFile; productRef = 5B4F06DC43B8D6A8EFE59B8C /* KeePassiumExpo */; };
+		D0907B61482A1F96157C73DF /* React in Frameworks */ = {isa = PBXBuildFile; productRef = D9FDC18AE1A6626BECC507CA /* React */; };
 		F331EF282A8509860084473D /* Zxcvbn in Frameworks */ = {isa = PBXBuildFile; productRef = F331EF272A8509860084473D /* Zxcvbn */; };
 		F331EF2A2A8509A10084473D /* Zxcvbn in Frameworks */ = {isa = PBXBuildFile; productRef = F331EF292A8509A10084473D /* Zxcvbn */; };
 		F331EF2C2A8509AC0084473D /* Zxcvbn in Frameworks */ = {isa = PBXBuildFile; productRef = F331EF2B2A8509AC0084473D /* Zxcvbn */; };
@@ -207,7 +212,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		753F5DCE2E285A6700F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		753F5DCE2E285A6700F4C290 /* Exceptions for "KeePassium" folder in "KeePassium" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Configuration.storekit,
@@ -219,7 +224,7 @@
 			);
 			target = 754BF07A2082A6BD00E3A292 /* KeePassium */;
 		};
-		753F5DCF2E285A6700F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		753F5DCF2E285A6700F4C290 /* Exceptions for "KeePassium" folder in "KeePassium AutoFill" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				/Localized/database/unlocker/DatabaseUnlockerVC.storyboard,
@@ -397,7 +402,7 @@
 			);
 			target = 750CFBC621BA9ACD00E62B09 /* KeePassium AutoFill */;
 		};
-		753F5DD02E285A6700F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		753F5DD02E285A6700F4C290 /* Exceptions for "KeePassium" folder in "KeePassium Pro" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Configuration.storekit,
@@ -409,7 +414,7 @@
 			);
 			target = 75B38BEF233E5B7C006BDEFC /* KeePassium Pro */;
 		};
-		753F5DD12E285A6700F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		753F5DD12E285A6700F4C290 /* Exceptions for "KeePassium" folder in "KeePassium Pro AutoFill" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				/Localized/database/unlocker/DatabaseUnlockerVC.storyboard,
@@ -587,7 +592,7 @@
 			);
 			target = 75D7DF7A233E5E310029AD87 /* KeePassium Pro AutoFill */;
 		};
-		753F5DD22E285A6700F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		753F5DD22E285A6700F4C290 /* Exceptions for "KeePassium" folder in "KeePassium Org" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Configuration.storekit,
@@ -596,7 +601,7 @@
 			);
 			target = 75D075AB28B639D200F02E39 /* KeePassium Org */;
 		};
-		753F5DD32E285A6700F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		753F5DD32E285A6700F4C290 /* Exceptions for "KeePassium" folder in "MacUtils" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				util/macos/MacUtils.swift,
@@ -604,35 +609,35 @@
 			);
 			target = 75060C542B8CEA84006C7B50 /* MacUtils */;
 		};
-		753F5EE82E285A7200F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		753F5EE82E285A7200F4C290 /* Exceptions for "KeePassium AutoFill" folder in "KeePassium" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				util/QuickAutoFillPrompt.swift,
 			);
 			target = 754BF07A2082A6BD00E3A292 /* KeePassium */;
 		};
-		753F5EE92E285A7200F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		753F5EE92E285A7200F4C290 /* Exceptions for "KeePassium AutoFill" folder in "KeePassium AutoFill" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = 750CFBC621BA9ACD00E62B09 /* KeePassium AutoFill */;
 		};
-		753F5EEA2E285A7200F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		753F5EEA2E285A7200F4C290 /* Exceptions for "KeePassium AutoFill" folder in "KeePassium Pro" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				util/QuickAutoFillPrompt.swift,
 			);
 			target = 75B38BEF233E5B7C006BDEFC /* KeePassium Pro */;
 		};
-		753F5EEB2E285A7200F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		753F5EEB2E285A7200F4C290 /* Exceptions for "KeePassium AutoFill" folder in "KeePassium Pro AutoFill" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = 75D7DF7A233E5E310029AD87 /* KeePassium Pro AutoFill */;
 		};
-		753F5EEC2E285A7200F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		753F5EEC2E285A7200F4C290 /* Exceptions for "KeePassium AutoFill" folder in "KeePassium Org" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				util/QuickAutoFillPrompt.swift,
@@ -642,9 +647,50 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		753F586F2E285A6700F4C290 /* KeePassium */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (753F5DCE2E285A6700F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 753F5DCF2E285A6700F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 753F5DD02E285A6700F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 753F5DD12E285A6700F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 753F5DD22E285A6700F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 753F5DD32E285A6700F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = KeePassium; sourceTree = "<group>"; };
-		753F5EB42E285A7200F4C290 /* KeePassium AutoFill */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (753F5EE82E285A7200F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 753F5EE92E285A7200F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 753F5EEA2E285A7200F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 753F5EEB2E285A7200F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 753F5EEC2E285A7200F4C290 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "KeePassium AutoFill"; sourceTree = "<group>"; };
-		753F5F022E285B1A00F4C290 /* KeePassiumTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = KeePassiumTests; sourceTree = "<group>"; };
+		753F586F2E285A6700F4C290 /* KeePassium */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				753F5DCE2E285A6700F4C290 /* Exceptions for "KeePassium" folder in "KeePassium" target */,
+				753F5DCF2E285A6700F4C290 /* Exceptions for "KeePassium" folder in "KeePassium AutoFill" target */,
+				753F5DD02E285A6700F4C290 /* Exceptions for "KeePassium" folder in "KeePassium Pro" target */,
+				753F5DD12E285A6700F4C290 /* Exceptions for "KeePassium" folder in "KeePassium Pro AutoFill" target */,
+				753F5DD22E285A6700F4C290 /* Exceptions for "KeePassium" folder in "KeePassium Org" target */,
+				753F5DD32E285A6700F4C290 /* Exceptions for "KeePassium" folder in "MacUtils" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = KeePassium;
+			sourceTree = "<group>";
+		};
+		753F5EB42E285A7200F4C290 /* KeePassium AutoFill */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				753F5EE82E285A7200F4C290 /* Exceptions for "KeePassium AutoFill" folder in "KeePassium" target */,
+				753F5EE92E285A7200F4C290 /* Exceptions for "KeePassium AutoFill" folder in "KeePassium AutoFill" target */,
+				753F5EEA2E285A7200F4C290 /* Exceptions for "KeePassium AutoFill" folder in "KeePassium Pro" target */,
+				753F5EEB2E285A7200F4C290 /* Exceptions for "KeePassium AutoFill" folder in "KeePassium Pro AutoFill" target */,
+				753F5EEC2E285A7200F4C290 /* Exceptions for "KeePassium AutoFill" folder in "KeePassium Org" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = "KeePassium AutoFill";
+			sourceTree = "<group>";
+		};
+		753F5F022E285B1A00F4C290 /* KeePassiumTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = KeePassiumTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -677,6 +723,11 @@
 				75A26778228F4E820097C693 /* StoreKit.framework in Frameworks */,
 				75D1C58627B415480079E97E /* YubiKit in Frameworks */,
 				F331EF282A8509860084473D /* Zxcvbn in Frameworks */,
+				AA97117095AA8F3E656C2257 /* KeePassiumExpo in Frameworks */,
+				2DFDEF99D7A77C4B57101425 /* hermesvm in Frameworks */,
+				D0907B61482A1F96157C73DF /* React in Frameworks */,
+				85E5BBAFF54B6A26C71F6DBC /* ReactNativeDependencies in Frameworks */,
+				667EC01406D2AF78ACCB5D0A /* ExpoModulesJSI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,6 +917,11 @@
 				75D1C58527B415480079E97E /* YubiKit */,
 				F331EF272A8509860084473D /* Zxcvbn */,
 				F33344352E844F90002EE262 /* WhatsNewKit */,
+				5B4F06DC43B8D6A8EFE59B8C /* KeePassiumExpo */,
+				D5EC65BD52F4413A1E1D5ED6 /* hermesvm */,
+				D9FDC18AE1A6626BECC507CA /* React */,
+				C4C42A94F1BD97B1E9354074 /* ReactNativeDependencies */,
+				42A45E44E6964F2B15139288 /* ExpoModulesJSI */,
 			);
 			productName = KeePassium;
 			productReference = 754BF07B2082A6BD00E3A292 /* KeePassium.app */;
@@ -1085,6 +1141,7 @@
 				F331EF262A8509860084473D /* XCRemoteSwiftPackageReference "zxcvbn-ios" */,
 				F33344342E844F90002EE262 /* XCRemoteSwiftPackageReference "WhatsNewKit" */,
 				754A34C62EB0F81A0050FBC4 /* XCRemoteSwiftPackageReference "ms-intune-app-sdk-ios" */,
+				601D25C499FDF9E8853257DB /* XCLocalSwiftPackageReference "KeePassiumExpoArtifacts" */,
 			);
 			preferredProjectObjectVersion = 48;
 			productRefGroup = 754BF07C2082A6BD00E3A292 /* Products */;
@@ -1912,6 +1969,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		601D25C499FDF9E8853257DB /* XCLocalSwiftPackageReference "KeePassiumExpoArtifacts" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "expo-app/artifacts/KeePassiumExpoArtifacts";
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		754A34C62EB0F81A0050FBC4 /* XCRemoteSwiftPackageReference "ms-intune-app-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -1964,6 +2028,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		42A45E44E6964F2B15139288 /* ExpoModulesJSI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 601D25C499FDF9E8853257DB /* XCLocalSwiftPackageReference "KeePassiumExpoArtifacts" */;
+			productName = ExpoModulesJSI;
+		};
+		5B4F06DC43B8D6A8EFE59B8C /* KeePassiumExpo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 601D25C499FDF9E8853257DB /* XCLocalSwiftPackageReference "KeePassiumExpoArtifacts" */;
+			productName = KeePassiumExpo;
+		};
 		7521EAD72E8D55B700016FB8 /* WhatsNewKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F33344342E844F90002EE262 /* XCRemoteSwiftPackageReference "WhatsNewKit" */;
@@ -2008,6 +2082,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 75D2192B29C4C23700D6F327 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */;
 			productName = MSAL;
+		};
+		C4C42A94F1BD97B1E9354074 /* ReactNativeDependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 601D25C499FDF9E8853257DB /* XCLocalSwiftPackageReference "KeePassiumExpoArtifacts" */;
+			productName = ReactNativeDependencies;
+		};
+		D5EC65BD52F4413A1E1D5ED6 /* hermesvm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 601D25C499FDF9E8853257DB /* XCLocalSwiftPackageReference "KeePassiumExpoArtifacts" */;
+			productName = hermesvm;
+		};
+		D9FDC18AE1A6626BECC507CA /* React */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 601D25C499FDF9E8853257DB /* XCLocalSwiftPackageReference "KeePassiumExpoArtifacts" */;
+			productName = React;
 		};
 		F331EF272A8509860084473D /* Zxcvbn */ = {
 			isa = XCSwiftPackageProductDependency;

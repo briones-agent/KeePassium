@@ -10,6 +10,12 @@ import KeePassiumLib
 
 extension MainCoordinator {
     internal func _maybeShowOnboarding() {
+        // Brownfield-demo: skip onboarding when the demo flag is on so the
+        // Expo Vault Inspector can take over without UI competing for the
+        // top-of-stack presentation.
+        if UserDefaults.standard.bool(forKey: "KeePassiumExpoAutoPresent") {
+            return
+        }
         let files = FileKeeper.shared.getAllReferences(fileType: .database, includeBackup: true)
         guard files.isEmpty else {
             _maybeStartAppPasscodeSetup()

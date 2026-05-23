@@ -48,6 +48,11 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         appServices.macUtils = loadMacUtilsPlugin()
         appServices.autoTypeHelper = AutoTypeHelper(macUtils: appServices.macUtils)
         #endif
+
+        // Expo brownfield demo wiring (see ExpoIntegration.swift).
+        ExpoIntegration.bootstrap()
+        ExpoIntegration.scheduleAutoPresentIfRequested()
+
         return true
     }
 
